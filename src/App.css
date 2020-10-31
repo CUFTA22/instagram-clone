@@ -1,38 +1,62 @@
 .App {
-  text-align: center;
+  background-color: #fafafa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  object-fit: contain;
+  border-bottom: 1px solid lightgrey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-headerLeft {
+  display: flex;
+  align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-headerLeft > .MuiSvgIcon-root {
+  margin-right: 12px;
+}
+.app-headerAvatar {
+  width: 25px !important;
+  height: 25px !important;
+}
+.app-posts {
+  width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 20px auto;
+}
+.app-posts-left {
+  width: 500px;
+}
+.app-posts-right {
+  margin-left: 30px;
+}
+.app-signup {
+  display: flex;
+  flex-direction: column;
+}
+.app-signup div {
+  margin: 20px 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 880px) {
+  .app-header {
+    padding: 0 15px;
   }
-  to {
-    transform: rotate(360deg);
+  .app-posts {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .app-posts-right {
+    display: none;
   }
 }

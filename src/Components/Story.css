@@ -1,0 +1,58 @@
+.story {
+  height: fit-content;
+  padding: 20px;
+  width: 500px;
+  background: white;
+  border: 1px solid lightgray;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.story-avatar {
+  width: 55px !important;
+  height: 55px !important;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.story-avatar > img {
+  -webkit-user-drag: none !important;
+}
+.story-avatar:nth-child(1) {
+  background-color: rgb(34, 34, 34);
+}
+.story-avatar:nth-child(1) > img {
+  width: 67px !important;
+  object-fit: contain;
+  margin: auto auto;
+}
+.story-avatar:nth-child(2) > img {
+  width: 200px !important;
+}
+.story-avatar:nth-child(3) {
+  background-color: rgb(34, 34, 34);
+}
+.story-avatar:nth-child(3) > img {
+  width: 47px !important;
+  object-fit: contain;
+}
+.story-avatar:nth-child(4) {
+  background-color: rgb(34, 34, 34);
+}
+.story-avatar:nth-child(4) > img {
+  width: 35px !important;
+  object-fit: contain;
+  margin: auto auto;
+}
+.story-avatar:nth-child(5) {
+  background-color: rgb(34, 34, 34);
+}
+.story-avatar:nth-child(5) > img {
+  width: 40px !important;
+  object-fit: contain;
+  margin: auto auto;
+}
+.story-avatar:hover {
+  transform: scale(1.07);
+}
